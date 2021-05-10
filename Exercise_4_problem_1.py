@@ -7,7 +7,7 @@
 # 
 #   T_{Celsius} = ( T_{Fahrenheit} - 32 ) / 1.8
 # 
-# Notice: Closely follow the instructions! 
+# 
 # 
 # Your score on this problem will be based on following criteria:
 # 
@@ -19,6 +19,18 @@
 # - Adding comments in your code and a docstring that explains how to use your `fahr_to_celsius` function (i.e., you should write the purpose of the function, parameters, and returned values)
 
 # YOUR CODE HERE
+def fahr_to_celsius(temp_fahrenheit):
+
+
+
+  converted_temp = (temp_fahrenheit - 32) / 1.8;
+
+#Create a function `converted_temp` to convert Fahrenheit temperature to Celsius.
+
+
+  return converted_temp
+
+
 
 # ### Problem 1 tests
 # 
@@ -27,7 +39,11 @@
 # 2. What about 71° Fahrenheit in Celsius?
 
 # ### Check your code
-# 
+# 1.
+print(fahr_to_celsius(48));
+
+#2.
+print(fahr_to_celsius(71));
 # - Make sure you used the given variable names
 # - Check that you have added necessary comments to your code
 # - Check that your function has a docstring that describes what it does
@@ -43,9 +59,9 @@
 
 # YOUR ANSWER HERE. Write your answers as comments
 #
+#It is clear.
 #
-#
-#
+#I don't have to write the same code anymore, making it more efficient.
 
 # #### Done!
 # 

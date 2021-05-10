@@ -66,6 +66,21 @@ temp_data =  [19, 21, 21, 21, 23, 23, 23, 21, 19, 21, 19, 21, 23, 27, 27, 28, 30
 
 # YOUR CODE HERE
 
+#Import fahr_to_celsius from temp_functions.py 
+from temp_functions import fahr_to_celsius
+
+#Import temp_classifier from temp_functions.py
+from temp_functions import temp_classifier
+
+#Create an empty list called temp_classes
+temp_classes = [];
+
+#Convert temperature in temp_data from Fahrenheit to Celsius and use temp_classes function to classify into Celsius
+for temp in temp_data:
+  temp_celsius = fahr_to_celsius(temp)
+  temp_class = temp_classifier(temp_celsius)
+  temp_classes.append(temp_class)
+
 # #### Part 2 (continues)
 # 
 # 6. Calculate how many temperatures there are in each temperature class:
@@ -75,6 +90,20 @@ temp_data =  [19, 21, 21, 21, 23, 23, 23, 21, 19, 21, 19, 21, 23, 27, 27, 28, 30
 #   
 
 # YOUR CODE HERE
+
+#create four variables
+zeros =0
+ones = 0
+twos = 0
+threes = 0
+
+#Count and assign to each variable how many times values 0, 1, 2, 3 are present in the `temp_classes` list.
+zeros = temp_classes.count(0)
+ones = temp_classes.count(1)
+twos = temp_classes.count(2)
+threes = temp_classes.count(3)
+
+
 
 # **TIP**: You might want to consider using a [**count()** function](https://www.tutorialspoint.com/python3/list_count.htm) OR a for loop for this.
 
